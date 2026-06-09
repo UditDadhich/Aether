@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.vx = (Math.random() - 0.5) * 0.4;
         this.vy = (Math.random() - 0.5) * 0.4;
         this.radius = Math.random() * 2 + 1;
-        this.color = Math.random() > 0.5 ? 'rgba(124, 58, 237, 0.2)' : 'rgba(8, 145, 178, 0.2)'; // Soft Purple/Cyan
+        this.color = Math.random() > 0.5 ? 'rgba(139, 92, 246, 0.35)' : 'rgba(6, 182, 212, 0.35)'; // Purple/Cyan
       }
 
       update() {
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(9, 9, 11, ${alpha * 0.8})`;
+            ctx.strokeStyle = `rgba(255, 255, 255, ${alpha * 0.75})`;
             ctx.lineWidth = 0.8;
             ctx.stroke();
           }
