@@ -266,14 +266,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (panels.length > 0 && workSection) {
       gsap.to('#work-wrap', {
-        xPercent: -100 * (panels.length - 1),
+        x: () => -(workSection.offsetWidth * (panels.length - 1)),
         ease: 'none',
         scrollTrigger: {
           trigger: '#work',
           pin: true,
           scrub: 0.8,
           start: 'top top',
-          end: () => `+=${workSection.offsetWidth}`,
+          end: () => `+=${workSection.offsetWidth * (panels.length - 1)}`,
           invalidateOnRefresh: true
         }
       });
