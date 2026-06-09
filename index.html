@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether Studio | Premium Creative Digital Experience</title>
+  <meta name="description" content="We create stunning, interactive, and premium digital experiences that push the boundaries of modern design and motion.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- Background Interactive Particles Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Lighting Effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Floating Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="logo" id="logo">AETHER.</a>
+    <ul class="nav-links">
+      <li><a href="#services" id="link-services">Services</a></li>
+      <li><a href="#work" id="link-work">Work</a></li>
+      <li><a href="#contact" id="link-contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" id="nav-cta">Let's Talk</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-subtitle" id="hero-subtitle">Digital Creative Agency</div>
+    <h1 class="hero-title" id="hero-title">
+      <span>CREATING</span>
+      <span>DIGITAL</span>
+      <span class="gradient-text">ARTISTRY.</span>
+    </h1>
+    <p class="hero-description" id="hero-description">
+      We craft immersive interactive interfaces, premium aesthetics, and high-performance digital narratives for brands that refuse to blend in.
+    </p>
+    <div class="hero-cta" id="hero-cta-group">
+      <a href="#work" class="btn btn-primary" id="btn-explore">Explore Work <i data-lucide="arrow-right"></i></a>
+      <a href="#contact" class="btn btn-secondary" id="btn-touch">Get in Touch</a>
+    </div>
+    
+    <!-- Scroll Down indicator -->
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid Services Section -->
+  <section class="section" id="services">
+    <span class="section-tag" id="services-tag">Capabilities</span>
+    <h2 class="section-title" id="services-title"><span>Services & Expertise</span></h2>
+    
+    <div class="bento-grid" id="bento-grid">
+      <!-- Large Card 1 -->
+      <div class="bento-card bento-large-1" id="card-hero">
+        <div class="card-icon"><i data-lucide="sparkles"></i></div>
+        <div>
+          <h3 class="card-title">Immersive Experience Design</h3>
+          <p class="card-description">
+            Building award-winning digital canvases combining typography, motion, and interaction. We design interfaces that are not only functional but feel alive and responsive to human interaction.
+          </p>
+          <div class="badge-container">
+            <span class="badge">Aesthetics First</span>
+            <span class="badge">Awwwards Style</span>
+            <span class="badge">Premium Motion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tall Card 2 -->
+      <div class="bento-card bento-tall" id="card-visual">
+        <div class="card-icon"><i data-lucide="layers"></i></div>
+        <div>
+          <h3 class="card-title">Brand Art Direction</h3>
+          <p class="card-description">
+            Defining next-generation brand identities with bespoke typography, curated color systems, and rich visual languages that demand attention and command value.
+          </p>
+          <div class="badge-container">
+            <span class="badge">Typography</span>
+            <span class="badge">Harmonious Palettes</span>
+            <span class="badge">CGI Mockups</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat Card 3 -->
+      <div class="bento-card" id="card-stat-1">
+        <div class="stat-value">34+</div>
+        <div class="stat-label">Active Projects</div>
+      </div>
+
+      <!-- Normal Card 4 -->
+      <div class="bento-card" id="card-tech">
+        <div class="card-icon"><i data-lucide="cpu"></i></div>
+        <div>
+          <h3 class="card-title">Interactive Tech</h3>
+          <p class="card-description">
+            Developing high-performance websites with clean structures, smooth animations, and optimized loading times.
+          </p>
+        </div>
+      </div>
+
+      <!-- Wide Card 5 -->
+      <div class="bento-card bento-wide" id="card-capabilities">
+        <div class="card-icon"><i data-lucide="palette"></i></div>
+        <div>
+          <h3 class="card-title">Interactive Frontends</h3>
+          <p class="card-description">
+            Pushing the limits of Vanilla JavaScript, canvas engines, WebGL shaders, and GSAP timelines to create stunning motion-driven websites.
+          </p>
+          <div class="badge-container">
+            <span class="badge">WebGL</span>
+            <span class="badge">GSAP</span>
+            <span class="badge">ScrollTrigger</span>
+            <span class="badge">HTML5 Canvas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat Card 6 -->
+      <div class="bento-card" id="card-stat-2">
+        <div class="stat-value">99%</div>
+        <div class="stat-label">Client Trust Score</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horizontal Showcase Section -->
+  <section class="work-pin-container" id="work">
+    <div class="work-horizontal-wrap" id="work-wrap">
+      
+      <!-- Panel 1 -->
+      <div class="work-panel" id="panel-1">
+        <div class="work-content">
+          <div class="work-info">
+            <span class="work-number">PROJECT 01</span>
+            <h3 class="work-name">CYBERPUNK HUD</h3>
+            <p class="work-desc">
+              A futuristic, high-tech dashboard interface displaying live data visualizations and generative particle grids. Focused on neon aesthetics, micro-layouts, and intricate user details.
+            </p>
+            <div class="work-tags">
+              <span class="badge">Interaction</span>
+              <span class="badge">Neon Glow</span>
+              <span class="badge">Dashboard</span>
+            </div>
+            <a href="#" class="btn btn-secondary">View Case <i data-lucide="arrow-right"></i></a>
+          </div>
+          <div class="work-media">
+            <img src="project_cyberpunk.png" alt="Cyberpunk HUD Project" class="work-img">
+            <div class="work-media-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="work-panel" id="panel-2">
+        <div class="work-content">
+          <div class="work-info">
+            <span class="work-number">PROJECT 02</span>
+            <h3 class="work-name">GLASS ORGANIC</h3>
+            <p class="work-desc">
+              An elegant visual brand mockup for a luxury wellness studio. Utilizes sophisticated organic glass forms, soft lighting, and HSL pastel highlights to convey peace and luxury.
+            </p>
+            <div class="work-tags">
+              <span class="badge">Visual Art</span>
+              <span class="badge">Glassmorphism</span>
+              <span class="badge">Luxury Branding</span>
+            </div>
+            <a href="#" class="btn btn-secondary">View Case <i data-lucide="arrow-right"></i></a>
+          </div>
+          <div class="work-media">
+            <img src="project_minimalist.png" alt="Glass Organic Project" class="work-img">
+            <div class="work-media-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3 -->
+      <div class="work-panel" id="panel-3">
+        <div class="work-content">
+          <div class="work-info">
+            <span class="work-number">PROJECT 03</span>
+            <h3 class="work-name">GENERATIVE MESH</h3>
+            <p class="work-desc">
+              A high-end algorithmic generative design piece featuring swirling iridescent silk strings and complex vector line structures on a velvet dark workspace.
+            </p>
+            <div class="work-tags">
+              <span class="badge">Algorithm</span>
+              <span class="badge">Generative</span>
+              <span class="badge">Creative Coding</span>
+            </div>
+            <a href="#" class="btn btn-secondary">View Case <i data-lucide="arrow-right"></i></a>
+          </div>
+          <div class="work-media">
+            <img src="project_generative.png" alt="Generative Mesh Project" class="work-img">
+            <div class="work-media-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Contact Section -->
+  <section class="section" id="contact">
+    <span class="section-tag" id="contact-tag">Connection</span>
+    <h2 class="section-title" id="contact-title"><span>Let's Create Together</span></h2>
+    
+    <div class="contact-container">
+      <div class="contact-info-wrap">
+        <p class="contact-lead" id="contact-lead-text">
+          Have an idea that needs a <span>premium digital canvas</span>? Reach out to start your motion-driven brand journey.
+        </p>
+        
+        <ul class="contact-methods">
+          <li class="contact-method-item">
+            <div class="contact-method-icon"><i data-lucide="mail"></i></div>
+            <a href="mailto:hello@aetherstudio.com" class="contact-method-link" id="contact-mail">hello@aetherstudio.com</a>
+          </li>
+          <li class="contact-method-item">
+            <div class="contact-method-icon"><i data-lucide="phone"></i></div>
+            <a href="tel:+1234567890" class="contact-method-link" id="contact-phone">+1 (234) 567-890</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input type="text" id="name" class="form-input" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" class="form-input" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" class="form-input" placeholder="Describe your project" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="justify-content: center;" id="btn-submit">
+          Send Message <i data-lucide="send"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Infinite Scrolling Ticker (Footer) -->
+  <div class="ticker-wrap" id="ticker">
+    <div class="ticker-track">
+      <div class="ticker-item">Aether Studio</div>
+      <div class="ticker-item">Immersive Experience</div>
+      <div class="ticker-item">Motion Design</div>
+      <div class="ticker-item">Brand Artistry</div>
+      <div class="ticker-item">Aether Studio</div>
+      <div class="ticker-item">Immersive Experience</div>
+      <div class="ticker-item">Motion Design</div>
+      <div class="ticker-item">Brand Artistry</div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <footer class="section" style="padding-top: 0; padding-bottom: 40px;" id="footer">
+    <div class="footer-bottom">
+      <a href="#" class="footer-logo">AETHER.</a>
+      <p>&copy; 2026 Aether Studio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Main Script -->
+  <script src="app.js"></script>
+</body>
+</html>
